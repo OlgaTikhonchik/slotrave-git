@@ -1,0 +1,176 @@
+
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+  
+}
+
+body {
+  display: block;
+  position: relative;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: left;
+  color: #FFFFFF;
+  background: transparent;
+  overflow-x: hidden;
+}
+h1,
+.title {
+  display: block;
+  position: relative;
+  /* font-size: 5vw; */
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: none;
+  text-align: center;
+  color:#FFFFFF;
+  font-size: clamp(28px, 5vw, 80px);
+  
+  line-height: 1.2;
+}
+
+
+
+.header,
+.main,
+.footer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.background,
+.hero__background,.background img,
+.hero__background img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+.background img,
+.hero__background img {
+  position: relative;
+  object-fit: cover;
+  object-position: 50% 50%;
+  
+ 
+}
+
+
+.logo {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 15px ;
+  transition: all 0.5s;
+ 
+}
+
+
+
+
+.logo img {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-height: 127px;
+}
+
+.main {
+  padding: 73px 0 0 0 ;
+  padding: 0;
+}
+
+
+.hero {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 73px); 
+  min-height: 100vh;
+  padding: 0;
+  border-radius: 12px;
+  padding:  20px ;
+  overflow: hidden;
+  
+}
+
+.hero__data {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+  max-width: 1000px;
+  max-width: 100%;
+  border-radius: 12px;
+  background: #30279780;
+
+  padding: 32px 20px;
+
+  
+}
+
+
+.hero__data p{
+    /* font-size: 2vw; */
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+  font-size: clamp(16px, 2vw, 24px);
+  line-height: 1.5;
+}
+
+
+.hero__title {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+  
+@media screen and (max-width: 666px) {
+   
+
+.hero__title{
+    gap: 12px;
+}
+
+
+}
+
+@media screen and (max-width: 540px) {
+   
+        
+
+
+    .hero {
+        padding: 10px;
+    }
+
+    .hero__data {
+      padding: 16px;
+    }
+   
+}
+
+/* --------- */
